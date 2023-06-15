@@ -34,7 +34,7 @@ namespace Test.API.Controllers
             return Ok(country);
         }
         [HttpPost]
-        public async Task<ActionResult> PostAsync(Product product)
+        public async Task<ActionResult> AddAsync(Product product)
         {
 
             _context.Add(product);
@@ -62,7 +62,7 @@ namespace Test.API.Controllers
 
         }
         [HttpPut]
-        public async Task<ActionResult> PutAsync(Product product)
+        public async Task<ActionResult> UpdateAsync(Product product)
         {
             _context.Update(product);
             try

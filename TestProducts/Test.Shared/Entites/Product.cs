@@ -40,6 +40,6 @@ namespace Test.Shared.Entites
         public decimal? Product_Length { get; set; }
 
         [RequiredIf("Dimension", true, ErrorMessage = "The field {0} is required.")]
-        public decimal? Product_High { get; set; }
+        public decimal? Product_Height { get; set; }
     }
 }
